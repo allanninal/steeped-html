@@ -44,7 +44,7 @@ open index.html        # macOS; on other systems double-click the file
 ## Customise
 
 - **Text:** open the page (`index.html`, `menu/index.html`, `journal/index.html`, `contact/index.html`) and edit it. The business details in the demo (name, address, phone, email, hours, owner or chef) are made up; search for them and replace every one, including the `ld+json` block in `index.html`.
-- **Colours and type:** the stylesheet in `assets/` starts with CSS variables (`--color-*`). Change them in one place.
+- **Colours and type:** the stylesheet in `assets/` (`index.*.css`) holds the colours as hex values. Search it for a colour and replace every match.
 - **Photos:** replace the files in `images/` with your own, keeping the names or updating the pages. Then delete the `<details data-photo-credits>` block from the footer of each page.
 - **Placeholder address:** the pages carry `https://example.com/` in the canonical and social-card tags. Replace it with your domain.
 - **Contact form:** it has no back end. As shipped it opens the visitor's email app. To receive messages from the page itself, point the form's `action` at a form service (Formspree, Formspark, Web3Forms, Netlify Forms) and follow that service's instructions.
@@ -59,13 +59,13 @@ It is a folder of static files, so any static host works.
 
 ## Measured scores
 
-Lighthouse mobile, this folder served as static files, median of three runs (2 November 2026):
+Lighthouse mobile, this folder served as static files, median of three runs (8 November 2026):
 
 | Page | Performance | Accessibility | Best practices | SEO |
 |---|---:|---:|---:|---:|
-| Home | 98 | 100 | 100 | 100 |
+| Home | 96 | 100 | 100 | 100 |
 | Menu | 100 | 100 | 100 | 100 |
-| Journal | 95 | 100 | 100 | 100 |
+| Journal | 99 | 100 | 100 | 100 |
 | Contact | 100 | 100 | 100 | 100 |
 
 Your scores will vary with your host and photos.
